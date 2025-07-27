@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Add this CSS to style.css */
+.letter-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#forYouButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.letter {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: inline-block;
+    text-align: left;
+}
+</style>
+
+<body>
+    <img src="ZUiY.gif" alt="stars" class="star">
+    <img src="5l03.gif" alt="ballon" class="ballon">
+    <div class="container">
+        <div class="birthdayCard">
+            <div class="cardFront">
+                <div class="front-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you </h3>
+                </div>
+                <div class="wrap-deco">
+                    <div class="decorations"></div>
+                    <div class="decorationsTwo"></div>
+                </div>
+                <div class="wrap-decoTwo">
+                    <div class="decorations"></div>
+                    <div class="decorationsThree"></div>
+                </div>
+                <div class="plate">
+                    <div class="cake"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <div class="cardInside">
+                <div class="img">
+                    <img src="./pic1.jpeg" alt="Brotherpic" class="bdyboy">
+                    <img src="6ob.gif" alt="confetti" class="confetti">
+                </div>
+                <div class="inside-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wishes">
+                    <p>Dear Jim Jam 💗,</p>
+                    <p>Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your
+                        birthday
+                        wishes come true.</p>
+                        <p class="name">~Your Dumb</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="letter-container">
+        <button id="forYouButton">This is for you 🤭</button>
+        <div id="letter" class="letter" style="display: none;">
+            <p>Dear Jim Jam,</p>
+            <p>Happy birthday Jim jam 💗 in today's world it's impossible to find a true friend but u are one of them 
+            I really enjoy your company . Talking to u is best part of the day and your company bring soo much happiness ✨
+            I am there for u all the time , I hope our friendship remains same 🤘 🎁🎈✨
+                
+                </p>
+            
+            
+        </div>
+    </div>
+
+    <img src="4SHX.gif" alt="cat" class="cat">
+
+    <script>
+        document.getElementById('forYouButton').addEventListener('click', function() {
+            var letter = document.getElementById('letter');
+            if (letter.style.display === 'none') {
+                letter.style.display = 'block';
+            } else {
+                letter.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
